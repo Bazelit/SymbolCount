@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <a class="theme" href="#!"><img src="img/light-mode.svg" alt="" /></a>
+        <div class="wrapper">
+            <div class="search">
+                <button data-number="1" class="search__button">
+                    Open Search
+                </button>
+                <div class="search__form">
+                    <input
+                        class="search__input"
+                        type="text"
+                        oninput="updateCharCount()"
+                    />
+                    <span class="close__button">X</span>
+                </div>
+            </div>
+            <div class="symbol__count">
+                Напечатано символов <strong>0</strong>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
